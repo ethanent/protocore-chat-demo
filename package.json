@@ -1,0 +1,16 @@
+{
+  "name": "protocore-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "node client.js",
+    "server": "node server.js"
+  },
+  "keywords": [],
+  "author": "Ethan Davis",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "protocore": "^1.2.1"
+  }
+}
