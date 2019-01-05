@@ -1,12 +1,12 @@
 const path = require('path')
 const net = require('net')
 
-const commonAbstractor = require(path.join(__dirname, 'commonAbstractor.js'))
+const commonAbstractorFactory = require(path.join(__dirname, 'commonAbstractorFactory.js'))
 
 const activeSockets = []
 
 const server = net.createServer((socket) => {
-	const abstractor = commonAbstractor()
+	const abstractor = commonAbstractorFactory()
 
 	console.log('A client connected.')
 

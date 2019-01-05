@@ -6,7 +6,8 @@ module.exports = () => {
 	commonAbstractor.register('login', new Schema([
 		{
 			'name': 'username',
-			'type': 'string'
+			'type': 'string',
+			'encoding': 'ascii'
 		},
 		{
 			'name': 'id',

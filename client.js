@@ -1,9 +1,9 @@
 const path = require('path')
 const net = require('net')
 
-const commonAbstractor = require(path.join(__dirname, 'commonAbstractor.js'))
+const commonAbstractorFactory = require(path.join(__dirname, 'commonAbstractorFactory.js'))
 
-const clientAbstractor = commonAbstractor()
+const clientAbstractor = commonAbstractorFactory()
 
 const client = net.createConnection(5135, () => {
 	console.log('Connected.')
